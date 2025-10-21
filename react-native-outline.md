@@ -146,6 +146,24 @@ Set up an Expo app and display “Hello World” on a virtual device.
 
 ---
 
+### 🎯 Capstone Project Grading Breakdown (100%)
+
+| **Category** | **Weight** | **Criteria** |
+|---------------|-------------|--------------|
+| **Functionality & Features** | 30% | App runs without major errors, meets project requirements, implements core functionality (data handling, interactivity, routing, etc.). |
+| **Code Quality & Structure** | 25% | Clean, well-organized code; proper use of components, hooks, and modular structure; meaningful naming and comments. |
+| **UI/UX Design** | 15% | Clear, user-friendly layout; responsive design; consistent styling using CSS/Tailwind. |
+| **Data Handling / API Integration** | 10% | Proper API calls (where applicable); good handling of loading, error, and empty states. |
+| **Presentation & Documentation** | 10% | Clear explanation of app’s purpose, architecture, and challenges; short in-class demo. |
+| **Creativity** | 10% | Any additional features beyond core requirements (e.g., React Native version, animations, context, etc.). |
+
+**Minimum Requirements:**
+- App must be functional and built primarily with React.
+- Code must be submitted via GitHub.
+- Short (5–7 min) presentation and Q&A in final session.
+
+---
+
 ## Optional Add-Ons
 - Context API for global state
 - Git & GitHub basics
