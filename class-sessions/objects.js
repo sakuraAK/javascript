@@ -58,4 +58,4 @@ console.log(jsonStrObj);
 
 let obj7 = JSON.parse(jsonStrObj);
 console.log(obj7);
-console.log(typeof(obj7))
+console.log(typeof(obj7));
