@@ -9,11 +9,17 @@
 
 ## 1) Create the Project
 
-JavaScript:
-    npm create vite@latest my-react-app -- --template react
+Run in terminal
+```
+cd /dev
+npm create vite@latest my-react-app
+```
+Options to select when asked:
+ - Select React as your framework
+ - Javascript flavour
+ - Select No when asked about Rollback option
+ - Install and run: Yes
 
-TypeScript (optional):
-    npm create vite@latest my-react-app -- --template react-ts
 
 Then:
     cd my-react-app

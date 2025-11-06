@@ -11,3 +11,4 @@ console.log(!boolTrue);
 
 
 console.log(typeof(boolTrue));
+
