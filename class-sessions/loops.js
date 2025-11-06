@@ -6,8 +6,8 @@ console.log(employees);
 
 // let counter = 0;
 
-// while(employees[counter]) {
-//     console.log('--- Empoyee details----');
+// while (counter < employees.length) {
+//     // console.log('--- Empoyee details----');
 //     console.log(JSON.stringify(employees[counter], null, 2));
 //     counter++;
 // }
@@ -21,13 +21,13 @@ console.log(employees);
 
 
 
-// for(let i = 0; i < employees.length; i++) {
-//     console.log('--- Empoyee details----');
+// for (let i = 0; i < employees.length; i = i + 1) {
+//     //console.log('--- Empoyee details----');
 //     console.log(JSON.stringify(employees[i], null, 2));
 // }
 
 // for (let employee of employees) {
-//     console.log('--- Empoyee details----');
+//     // console.log('--- Empoyee details----');
 //     console.log(JSON.stringify(employee, null, 2));
 // }
 
@@ -78,14 +78,14 @@ console.log(employees);
 
 
 
-employeeLbl: for (let employee of employees) {
-  console.log(`
---- Logging employee details ----
-`);
-  for (let prop in employee) {
-    if (prop === "dateBirth") {
-        continue employeeLbl;
-    }
-    console.log(`${prop} : ${employee[prop]}`);
-  }
-}
+// employeeLbl: for (let employee of employees) {
+//   console.log(`
+// --- Logging employee details ----
+// `);
+//   for (let prop in employee) {
+//     if (prop === "dateBirth") {
+//         continue employeeLbl;
+//     }
+//     console.log(`${prop} : ${employee[prop]}`);
+//   }
+// }
