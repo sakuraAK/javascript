@@ -44,7 +44,7 @@ This shows **parent-child relationships** and how the UI can be structured into 
 
 ---
 
-<img src="to-do.png" alt="Todo app diagram" style="max-width:700px; width:50%; height:50%;" />
+<img src="assets/to-do.png" alt="Todo app diagram" style="max-width:700px; width:50%; height:50%;" />
 
 ----
 
