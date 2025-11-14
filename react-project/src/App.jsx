@@ -1,69 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header/Header'
+import CoreConcept from './components/CoreConcept'
+import TabButton from './components/TabButton.jsx'
 
-const title = 'Vite - React';
 
-function Header() {
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>{title}</h1>
-  </>
-    
-  );
-}
-
-function BulletListItem(props) {
-  return (
-    <>
-       <li>{props.title}</li>
-    </>
-  );
-}
-
-function BulletList() {
-  return (
-    <>
-      <ul>
-          <BulletListItem title="Components"></BulletListItem>
-          <BulletListItem title="JSX"></BulletListItem>
-          <BulletListItem title="Props"></BulletListItem>
-          <BulletListItem title="State"></BulletListItem>
-        </ul>
-    </>
-  );
-}
-
+import { CORE_CONCEPTS, EXAMPLES } from "./data.js"
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-     <Header></Header>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR!
-        </p>
-      </div>
-      <p className="read-the-docs"> 
-        <h3>React has 10 core concepts:</h3>
-        <BulletList></BulletList>
-      </p>
+    <>   
+      <Header/>
+      <main>
+          <section id="core-concepts">
+            <h2>Core concepts</h2>
+            <ul>
+                <CoreConcept 
+                  image={CORE_CONCEPTS[0].image} 
+                  title={CORE_CONCEPTS[0].title} 
+                  description={CORE_CONCEPTS[0].description}/>
+                <CoreConcept {...CORE_CONCEPTS[1]}/>
+                <CoreConcept {...CORE_CONCEPTS[2]}/>
+                <CoreConcept {...CORE_CONCEPTS[3]}/>
+            </ul>
+          </section>
+          <section id="examples">
+            <h2>Examples</h2>
+            <menu>
+                <TabButton>{EXAMPLES['components'].title}</TabButton>
+                <TabButton>{EXAMPLES['jsx'].title}</TabButton>
+                <TabButton>{EXAMPLES['props'].title}</TabButton>
+                <TabButton>{EXAMPLES['state'].title}</TabButton>
+            </menu>
+            <code>{EXAMPLES['components'].code}</code>
+          </section>
+
+      </main>
     </>
   );
 }
 
-export default App
+export default App;
