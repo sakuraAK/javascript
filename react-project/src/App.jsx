@@ -2,11 +2,23 @@ import './App.css'
 import Header from './components/Header/Header'
 import CoreConcept from './components/CoreConcept'
 import TabButton from './components/TabButton.jsx'
+import { useState } from 'react'
 
 
 import { CORE_CONCEPTS, EXAMPLES } from "./data.js"
 
 function App() {
+ 
+  const [examplePanelContent, updateExamlePanelContet] = useState("Select core concept");
+
+
+
+  function handleClick(buttonName) {
+        console.log('Button clicked');
+        updateExamlePanelContet(EXAMPLES[buttonName].code);
+        console.log(examplePanelContent);
+  }
+
   return (
     <>   
       <Header/>
@@ -26,12 +38,12 @@ function App() {
           <section id="examples">
             <h2>Examples</h2>
             <menu>
-                <TabButton>{EXAMPLES['components'].title}</TabButton>
-                <TabButton>{EXAMPLES['jsx'].title}</TabButton>
-                <TabButton>{EXAMPLES['props'].title}</TabButton>
-                <TabButton>{EXAMPLES['state'].title}</TabButton>
+                <TabButton onSelect={() => handleClick('components')}>{EXAMPLES['components'].title}</TabButton>
+                <TabButton onSelect={() => handleClick('jsx')}>{EXAMPLES['jsx'].title}</TabButton>
+                <TabButton onSelect={() => handleClick('props')}>{EXAMPLES['props'].title}</TabButton>
+                <TabButton onSelect={() => handleClick('state')}>{EXAMPLES['state'].title}</TabButton>
             </menu>
-            <code>{EXAMPLES['components'].code}</code>
+            <code>{examplePanelContent}</code>
           </section>
 
       </main>
