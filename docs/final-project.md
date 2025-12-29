@@ -8,10 +8,6 @@ This project uses **only the React and JavaScript concepts covered in class**. T
 
 Focus on **correctness, simplicity, and clarity**.
 
-❗ The project is designed to be worked on individually. 
-
-❗ Group or identical submissions will not be accepted. 
-
 ---
 
 ## Project Goal
@@ -54,16 +50,16 @@ The app should have a **simple layout** and be easy to use. Visual design is **n
 
 Your application must include the following sections:
 
-### 1️⃣ Header
+### Header
 
 * Displays the application title (e.g., "My Task Tracker")
 
-### 2️⃣ Task Input
+### Task Input
 
 * Text input for entering a task name
 * Button to add a task
 
-### 3️⃣ Task List
+### Task List
 
 * Displays all added tasks
 * Each task must show:
@@ -72,7 +68,7 @@ Your application must include the following sections:
   * A way to mark the task as completed
   * A button to delete the task
 
-### 4️⃣ Footer / Summary
+### Footer / Summary
 
 * Shows:
 
@@ -189,31 +185,44 @@ Only attempt these if everything else is complete:
 
 ---
 
-## Submission Requirements
+## Submission Requirements 
 
-* Use your Github repository. You will be required to send a link to your repo
-* All project related files should be committed and pushed to become available in Github 
-* All project related files should be placed under separate folder. Example of the structure if you use a fork of my javascript repository:
-```
-javascript/
-├── react-project/
-    ├── src/
-        ├── final-project/
-            ├── App.jsx
-            ├── components/
-                ├── Header.jsx
-                ├── TaskInput.jsx
-                ├── TaskList.jsx
-                ├── TaskItem.jsx
-                └── Footer.jsx
-```
-* A short `README.md` file that explains:
+❗ This is **individual** project. Group or identical submissions will not be accepted.
 
-  * What your app does
-  * How to run it
+❗ You **must** submit your project using **Git and GitHub**.
+
+Requirements:
+- Create or use an existing Git repository for your project
+- Push the repository to GitHub
+- Commit your work regularly
+- Meaningful commit messages are expected
 
 ---
 
+### Repository Structure (Suggested)
+```
+ ├── src/
+    ├── final-project/
+        ├── App.jsx
+           ├── components/
+              ├── Header.jsx
+              ├── TaskInput.jsx
+              ├── TaskList.jsx
+              ├── TaskItem.jsx
+              └── Footer.jsx
+```
+
+---
+
+## README.md Requirements
+
+Your `README.md` file must include:
+
+- Project title and description
+- How to run the application
+- Example usage
+
+---
 ## How This Project Will Be Evaluated
 
 Your project will be graded based on:
