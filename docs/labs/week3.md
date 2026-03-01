@@ -12,7 +12,7 @@
 1. Create a file called:
 
    ```
-   week2_homework.js
+   week3_homework.js
    ```
 ---
 
