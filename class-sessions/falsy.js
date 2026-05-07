@@ -11,8 +11,8 @@ function isTruthy(name, exp) {
 //Numbers
 // isTruthy("0", 0);
 // isTruthy("0", -0);
-// isTruthy("not 0", 1);
-// isTruthy("bigint numbers", 1n);
+// isTruthy("not 0", 1.5);
+// isTruthy("bigint numbers", 1_000_0000_0000_000);
 
 //Boolean, NaN, undefined, null
 // isTruthy("NaN", NaN);
@@ -22,9 +22,9 @@ function isTruthy(name, exp) {
 // isTruthy("true", true);
 
 //Strings
-isTruthy("Empty string", "");
-isTruthy("Non empty string", "ascsdvdgr");
-isTruthy("Boolean string false", "false");
+// isTruthy("Empty string", "");
+// isTruthy("Non empty string", "ascsdvdgr");
+// isTruthy("Boolean string false", "false");
 
 //Objects
 isTruthy("Object", {});
